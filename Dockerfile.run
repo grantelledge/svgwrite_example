@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+docker run --user $(id -u):$(id -g) --rm -v $PWD:/app svgwrite_example 
